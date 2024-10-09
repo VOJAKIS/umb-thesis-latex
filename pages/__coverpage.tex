@@ -1,0 +1,70 @@
+\begin{flushleft}
+	% Disable page numbering
+	\pagenumbering{gobble}
+
+	\begin{center}
+		% University's name
+		\MakeUppercase{
+			\large
+			\textbf{
+				\thesisuniversityname
+			}
+		}\\
+		% Faculty's name
+		\MakeUppercase{
+			\large
+			\textbf{
+				\expandafter
+				\thesisfacultyname
+			}
+		}
+	\end{center}
+
+	\vfill
+	\thispagestyle{empty}
+
+	% Názov práce
+	\begin{center}
+		\Large
+		\textbf{
+			\MakeUppercase[]{
+				\expandafter
+				\thesisname
+			}
+		}\\
+		\textbf{
+			\MakeUppercase[]{
+				\expandafter
+				\thesistype
+			}
+		}
+		\textbf{
+			\expandafter
+			\thesisuuid
+		}
+	\end{center}
+
+	\vspace{2cm}
+	\vfill
+
+	% Prevents indentation at the beginning of the line
+	\noindent
+	\begin{minipage}{0.46\textwidth}
+		\begin{flushleft}
+			\textbf{
+				\MakeUppercase{
+					\expandafter
+					\yearofpublishing
+				}
+			}
+		\end{flushleft}
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		\begin{flushright}
+			\textbf{
+				\expandafter
+				\authorsfullname
+			}
+		\end{flushright}
+	\end{minipage}
+\end{flushleft}

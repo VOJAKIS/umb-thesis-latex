@@ -1,0 +1,90 @@
+\begin{titlepage}
+	% Disable page numbering
+	\pagenumbering{gobble}
+
+	\begin{center}
+		% University's name
+		\MakeUppercase{
+			\large
+			\textbf{
+				\thesisuniversityname
+			}
+		}\\
+		% Faculty's name
+		\MakeUppercase{
+			\large
+			\textbf{
+				\expandafter
+				\thesisfacultyname
+			}
+		}
+	\end{center}
+
+	\vfill
+	\thispagestyle{empty}
+
+	% Názov práce
+	\title{
+		\Large
+		\textbf{
+			\MakeUppercase[]{
+				\expandafter
+				\thesisname
+			}
+		}
+	}
+	\date{
+		\vspace{
+			-10ex
+		}
+	}
+	{
+		\let\newpage\relax\maketitle
+	}
+
+
+	\begin{center}
+		\expandafter
+		\thesistype\\
+
+		\vspace{0.5cm}
+		\textbf{
+			\expandafter
+			\thesisuuid
+		}
+	\end{center}
+
+	\vspace{2cm}
+	
+	\noindent
+	\begin{tabular}{ll}
+		Študijný program: & \expandafter\thesisstudyprogram\\
+		Študijný odbor: & \expandafter\thesisfieldofstudy\\
+		Školiace pracovisko: & \expandafter\thesisdepartmentname\\
+		Vedúci práce: & \expandafter\thesissupervisor\\
+	\end{tabular}
+
+	% This will push the location and author to the bottom of the page
+	\vfill
+
+	% Prevents indentation at the beginning of the line
+	\noindent
+	\begin{minipage}{0.5\textwidth}
+		\begin{flushleft}
+			\textbf{
+				\MakeUppercase{
+					\expandafter
+					\cityofpublishing~\yearofpublishing
+				}
+			}
+		\end{flushleft}
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		\begin{flushright}
+			\textbf{
+				\expandafter
+				\authorsfullname
+			}
+		\end{flushright}
+	\end{minipage}
+\end{titlepage}

@@ -1,0 +1,126 @@
+\documentclass[12pt,a4paper]{article} % Set paper size to A4 (297 x 210 mm)
+
+\input{settings}
+
+\input{variables}
+
+\usepackage[explicit]{titlesec}
+
+\makeatletter
+\newcommand{\namelabel}[1]{%
+  \phantomsection
+  \renewcommand{\@currentlabel}{#1}% Update the label text/name
+  \label{#1}% Set the label
+}
+\makeatother
+
+\makeatletter
+\renewcommand\listoftables{
+  \@starttoc{lot}
+}
+\makeatother
+
+\theoremstyle{definition}
+\newtheorem{priklad}{Príklad}[section]
+
+\begin{document}
+
+\setcitestyle{square}
+
+\selectlanguage{slovak}
+
+% Cover page
+\input{pages/__coverpage.tex}
+
+% Title page
+\input{pages/_titlepage.tex}
+
+% Enable page numbering, because _titlepage.tex disables it
+\pagenumbering{arabic}
+\setcounter{page}{3}
+
+% Zadanie práce
+\input{pages/00_assignment.tex}
+
+% Čestné vyhlásenie
+\input{pages/01_disclaimer.tex}
+
+% Poďakovanie
+\input{pages/02_poďakovanie.tex}
+
+% Abstrakty SK, EN Abstrakty Abstrakty Abstrakty Abstrakty Abstrakty 
+\input{pages/03_abstract_SK.tex}
+\thispagestyle{empty}
+\newpage
+\thispagestyle{empty}
+\input{pages/04_abstract_EN.tex}
+
+% Obsah Obsah Obsah Obsah Obsah Obsah Obsah Obsah Obsah Obsah Obsah
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+\pagestyle{fancy}
+
+
+% Zoznam zdrojových kódov Zoznam zdrojových kódov Zoznam zdrojových kódov
+\pagebreak
+\namelabel{listoflistings}
+\addcontentsline{toc}{section}{Zoznam zdrojových kódov}
+\lstlistoflistings
+
+% % Zoznam obrázkov Zoznam obrázkov Zoznam obrázkov Zoznam obrázkov
+% \pagebreak
+\renewcommand{\listfigurename}{Zoznam ilustrácií a tabuliek}
+\microtypesetup{protrusion=false}
+\namelabel{Zoznam ilustrácií a tabuliek}
+\addcontentsline{toc}{section}{Zoznam ilustrácií a tabuliek}
+\listoffigures{}
+
+\bigbreak
+\bigbreak
+\listoftables{}
+\microtypesetup{protrusion=true}
+
+% Register pojmov
+% \pagebreak
+% \renewcommand{\glossaryname}{Register pojmov} % Translate to Slovak for "Glossary"
+% \renewcommand{\acronymname}{Zoznam skratiek} % Translate to Slovak for "List of Acronyms"
+% \pagebreak
+% \printglossaries{}
+
+% Jadro Jadro Jadro Jadro Jadro Jadro Jadro Jadro Jadro Jadro Jadro 
+\pagebreak
+\thesischapters
+\pagebreak
+
+
+
+\phantomsection
+\renewcommand\refname{Zoznam bibliografických odkazov}
+\addcontentsline{toc}{section}{Zoznam bibliografických odkazov}
+\pagestyle{fancy}
+
+\bibliographystyle{unsrt}
+% \bibliographystyle{slovakiso.bst}
+\bibliography{bibliography} %bib-filename
+
+% \nocite{*} %List all bib-entries
+
+\newpage
+\namelabel{Prílohy}
+\section*{Prílohy}
+\addcontentsline{toc}{section}{Prílohy}
+\begin{enumerate}
+	[label=Príloha \arabic* –, leftmargin=2.1cm]
+	\item \usermanualtype
+	\item \systemdocumentationtype
+\end{enumerate}
+
+\pagebreak
+\usermanualchapters
+
+\newpage
+\systemdocumentationchapters
+
+\end{document}
