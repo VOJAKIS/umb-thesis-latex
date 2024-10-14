@@ -1,5 +1,11 @@
 # UMB thesis template in LaTeX
 
+## Ukážkový súbor
+
+[Odkaz na ukážkový vygenerovaný súbor](out/main.pdf)
+
+<br>
+
 ## Tutoriál
 Stačí postupovať podľa tutoriálu. Nižšie uvedené informácie sú len pomôcky alebo nastavenia, ktoré fungujú pre tvorcu (@VOJAKIS)
 
