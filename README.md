@@ -1,4 +1,7 @@
-# UMB thesis template in LaTeX
+# LaTeX šablóna pre záverečné práce FPV UMB
+Táto šablóna slúži na písanie záverečných prác v jazyku LaTeX. Šablónu si môžeme upraviť podľa potrieb.
+
+<br>
 
 ## Ukážkový súbor
 <!-- > [!NOTE] Ukážkový súbor -->
