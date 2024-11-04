@@ -1,19 +1,19 @@
 # UMB thesis template in LaTeX
 
 ## Ukážkový súbor
-
-[Odkaz na ukážkový vygenerovaný súbor](out/main.pdf)
+<!-- > [!NOTE] Ukážkový súbor -->
+> [📄 Ukážkový vygenerovaný súbor PDF](out/main.pdf)
 
 <br>
 
 ## Tutoriál
-Stačí postupovať podľa tutoriálu. Nižšie uvedené informácie sú len pomôcky alebo nastavenia, ktoré fungujú pre tvorcu (@VOJAKIS)
+Stačí postupovať podľa tutoriálu. Nižšie uvedené informácie majú služiť ako pomôcky alebo nastavenia.
 
-https://mathjiajia.github.io/vscode-and-latex/
+> https://mathjiajia.github.io/vscode-and-latex/
 
 <br>
 
-## Potrebné dependencie
+## Potrebné závislosti
 
 ### LaTeX
 - Inštalačný súbor pre Windows (inštalácia trvá dlho, aj viacej než 3 hodiny) https://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe
@@ -116,4 +116,14 @@ https://mathjiajia.github.io/vscode-and-latex/
 	"latex-workshop.latex.recipe.default": "lastUsed"
 	```
 	</p></details>
+
+<br>
+
+## Možné problémy
+> [!WARNING] Pri spúšťaní môžu nastať nasledovné problémy.
+
+### Linux
+Chyba | Riešenie | Riešenie
+|-|-|-|
+Package fontspec: The font "Times New Roman" cannot be found.LaTeX | Inštalácia fontu "Times New Roman" | Inštalácia fontu "Times New Roman"
 
