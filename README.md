@@ -14,13 +14,16 @@ Stačí postupovať podľa tutoriálu. Nižšie uvedené informácie majú služ
 
 > https://mathjiajia.github.io/vscode-and-latex/
 
+Inštalácia jazyka LaTeX na Linux Ubuntu
+> https://geekflare.com/how-to-install-latex-on-ubuntu/
+
 <br>
 
 ## Potrebné závislosti
 
 ### LaTeX
-- Inštalačný súbor pre Windows (inštalácia trvá dlho, aj viacej než 3 hodiny) https://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe
-- Inštalačný súbor pre ostatné operačné systémy (OS) https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+- Inštalačný súbor pre Windows (inštalácia trvá dlho, aj viacej než 3 hodiny) <br> https://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe
+- Inštalácia na Linux Ubuntu <br> https://geekflare.com/how-to-install-latex-on-ubuntu/
 
 ### VSCode
 - Odkaz na stiahnutie rôznych verzií https://code.visualstudio.com/download
