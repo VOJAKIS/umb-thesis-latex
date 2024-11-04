@@ -120,7 +120,7 @@ Stačí postupovať podľa tutoriálu. Nižšie uvedené informácie majú služ
 <br>
 
 ## Možné problémy
-> [!WARNING] Pri spúšťaní môžu nastať nasledovné problémy.
+Pri spúšťaní môžu nastať nasledovné problémy.
 
 ### Linux
 Chyba | Riešenie | Riešenie
